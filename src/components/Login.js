@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 
 const Login = ({ onLogin }) => {
-  const [email, setEmail] = useState("Jack@gmail.com");
+const [email, setEmail] = useState("Jack@gmail.com");
   const [mdp, setPassword] = useState("J1");
 
   const handleLogin = () => {
     // Perform any client-side validation if needed
-
+    
     // Call the onLogin prop with user credentials
     onLogin({ email, mdp });
   };
