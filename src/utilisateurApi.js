@@ -1,5 +1,12 @@
 import axios from 'axios';
 
+import cors from "cors";
+import express from "express";
+
+const app = express();
+
+app.use(cors());
+
 const API_BASE_URL = 'https://back-office-culture-production.up.railway.app/utilisateurs';
 
 export const getAllUtilisateurs = () => {

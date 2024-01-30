@@ -1,11 +1,4 @@
 import React, { useState } from "react";
-import cors from "cors";
-import express from "express";
-
-const app = express();
-
-app.use(cors());
-
 
 const Login = ({ onLogin }) => {
 const [email, setEmail] = useState("Jack@gmail.com");
