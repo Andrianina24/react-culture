@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:8080/utilisateurs';
+const API_BASE_URL = 'https://back-office-culture-production.up.railway.app/utilisateurs';
 
 export const getAllUtilisateurs = () => {
   return axios.get(`${API_BASE_URL}`);
