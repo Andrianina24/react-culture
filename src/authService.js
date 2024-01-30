@@ -6,8 +6,8 @@ export const login = async (credentials) => {
   try {
     // Log request details
     console.log("Sending login request...");
-    console.log("Request URL:", `${API_BASE_URL}/utilisateurs/login`);
-    console.log("Request Payload:", credentials);
+    // console.log("Request URL:", `${API_BASE_URL}/utilisateurs/login`);
+    // console.log("Request Payload:", credentials);
 
     const response = await axios.post(
       `${API_BASE_URL}/utilisateurs/login`,
