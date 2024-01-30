@@ -1,0 +1,95 @@
+/* Ajoutez vos styles personnalisés ici */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    display: flex;
+}
+
+#sidebar-wrapper {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+}
+
+.sidebar-menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar-menu li {
+    margin-bottom: 10px;
+}
+/* ... (styles précédents) */
+
+.sidebar-menu li {
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-menu li:hover {
+    background-color: rgb(0, 125, 21)555;
+}
+
+.sidebar-menu a {
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    padding: 10px;
+}
+
+.sidebar-menu li.active {
+    background-color: #009851;
+}
+
+/* ... (styles suivants) */
+
+#page {
+    flex: 1;
+    padding: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card-header {
+    background-color: #ffffff;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.chart-container-1,
+.chart-container-2 {
+    margin-top: 20px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table td,
+.table th {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #f0f0f0;
+}
+
+/* Ajoutez d'autres styles selon vos besoins */
