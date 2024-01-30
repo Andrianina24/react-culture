@@ -5,7 +5,7 @@ import express from "express";
 
 const app = express();
 
-app.use(cors());
+app.use(cors({ origin: '*' }));
 
 const API_BASE_URL = 'https://back-office-culture-production.up.railway.app/utilisateurs';
 
@@ -25,11 +25,6 @@ export const deleteUtilisateur = (id) => {
   return axios.delete(`${API_BASE_URL}/${id}`);
 };
 
-export const login = async (email, mdp) => {
-  try {
-    const response = await axios.post(`${API_BASE_URL}/login?email=${email}&mdp=${mdp}`);
-    return response.data;
-  } catch (error) {
-    throw error;
-  }
+export const login = (email, mdp) => {
+  return axios.post(`${API_BASE_URL}/login?email=${email}&mdp=${mdp}`);
 };
