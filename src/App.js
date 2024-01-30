@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import "./Dash.css";
 import {
@@ -6,7 +5,6 @@ import {
   Route,
   Routes,
   Navigate,
-  Redirect,
 } from "react-router-dom";
 import CultureComponent from "./components/CultureComponent";
 import LoginPage from "./pages/LoginPage";

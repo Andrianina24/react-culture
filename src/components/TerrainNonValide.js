@@ -4,7 +4,7 @@ import {
   validerTerrain,
   refuserTerrain,
 } from "../terrainApi";
-import { useNavigate, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const NonValideTerrainsList = () => {
   const [nonValideTerrains, setNonValideTerrains] = useState([]);
@@ -67,7 +67,6 @@ const NonValideTerrainsList = () => {
           data-simplebar-auto-hide="true"
         >
           <div className="brand-logo">
-            <a href="index.html"></a>
           </div>
           <ul className="sidebar-menu do-nicescrol">
             <li className="sidebar-header"></li>

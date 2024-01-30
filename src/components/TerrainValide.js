@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { findTerrainValide } from "../terrainApi";
-import { useNavigate, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const ValideTerrainsList = () => {
-  const navigate = useNavigate();
   const [ValideTerrains, setValideTerrains] = useState([]);
 
   useEffect(() => {
@@ -29,7 +28,6 @@ const ValideTerrainsList = () => {
           data-simplebar-auto-hide="true"
         >
           <div className="brand-logo">
-            <a href="index.html"></a>
           </div>
           <ul className="sidebar-menu do-nicescrol">
             <li className="sidebar-header"></li>

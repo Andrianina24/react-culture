@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { getAllCultures, updatePrix } from "../cultureApi";
-import { useNavigate, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const UpdatePrixForm = () => {
   const [cultures, setCultures] = useState([]);
@@ -54,7 +54,6 @@ const UpdatePrixForm = () => {
           data-simplebar-auto-hide="true"
         >
           <div class="brand-logo">
-            <a href="index.html"></a>
           </div>
           <ul class="sidebar-menu do-nicescrol">
             <li class="sidebar-header"></li>

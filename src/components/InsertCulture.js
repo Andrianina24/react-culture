@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { addCulture } from "../cultureApi";
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const InsertCultureForm = () => {
   const navigate = useNavigate();
